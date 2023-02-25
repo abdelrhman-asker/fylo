@@ -212,11 +212,15 @@ body {
     flex-direction: column;
   }
   .BeforeNavLeft {
-    width: 80%;
+    width: 100%;
   }
   .BeforeNavRight {
-    width: 80%;
+    width: 100%;
   }
+  .inputEmail {
+    width: 100% !important;
+  }
+
   .SecondLineFooter {
     flex-wrap: wrap;
     gap: 30px;
@@ -225,5 +229,10 @@ body {
   .SecondLineFooter div {
     border-bottom: 1px solid gray;
     padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .HidInMedia {
+    display: none;
   }
 }
