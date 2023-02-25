@@ -1,0 +1,229 @@
+a {
+  text-decoration: none;
+  color: #474552;
+}
+h3,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  margin: 0;
+}
+.NavDiv {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavLinks {
+  display: flex;
+  gap: 20px;
+}
+.MainDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10%;
+  width: 70%;
+  margin: 5vh auto;
+}
+.LeftMainDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.MainDiv img {
+  width: 400px;
+  height: 350px;
+}
+.MainDiv h1 {
+  font-size: 42px;
+}
+.MainDiv h3 {
+  font-weight: 300;
+  font-size: 18px;
+}
+.MainDiv .inputEmail {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 50%;
+}
+
+.MainDiv .inputSubmit {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: white;
+  background-color: #2f65f9;
+  cursor: pointer;
+}
+
+.SecondSection {
+  background: url(images/bg-curve-desktop.svg) no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 10vh 5vh;
+}
+.IlluTwo {
+  width: 400px;
+  height: 350px;
+}
+.ArrowIco {
+  width: 50px;
+  height: 50px;
+}
+.LeftSecondSection {
+  width: 50%;
+}
+.SecondSection h2 {
+  font-size: 38px;
+}
+.SecondSection h3 {
+  font-size: 20px;
+  width: 80%;
+}
+.SecondSection h4 {
+  font-size: 22px;
+  color: #27c6a9;
+}
+.CardSecSection {
+  box-shadow: 2px 2px 20px gray;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+.CardSecSection h3 {
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 14px;
+}
+.AvatarDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.AvatarDiv h3 {
+  font-size: 12px;
+}
+.CardSecSection .ImgAvatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.BeforeNavSec {
+  background-color: #575989;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  gap: 20%;
+  color: white;
+}
+.BeforeNavSec h4 {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.BeforeNavLeft {
+  width: 40%;
+}
+.BeforeNavRight {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.BeforeNavRight form {
+  width: 100%;
+  text-align: start;
+}
+.BeforeNavSec .inputEmail {
+  padding: 10px;
+  border-radius: 15px;
+  width: 60%;
+}
+.BeforeNavSec .inputSubmit {
+  margin-top: 10px;
+  background-color: #2f65f9;
+  color: white;
+  padding: 10px 15px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.MainFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  padding: 5vh 0;
+  background-color: #07043b;
+}
+.MainFooter img {
+  color: white;
+}
+.MainFooter div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.SecondLineFooter {
+  justify-content: center;
+}
+.MainFooter a {
+  color: rgb(217, 217, 217);
+}
+.IconInfo a {
+  border: 1px solid white;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 5px;
+}
+/* media query */
+@media screen and (min-width: 1px) and (max-width: 771px) {
+  .MainDiv {
+    flex-direction: column;
+  }
+  .SecondSection {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .LeftSecondSection {
+    width: 80%;
+  }
+  .CardSecSection {
+    width: 100%;
+  }
+  .BeforeNavSec {
+    flex-direction: column;
+  }
+  .BeforeNavLeft {
+    width: 80%;
+  }
+  .BeforeNavRight {
+    width: 80%;
+  }
+  .SecondLineFooter {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 !important;
+  }
+  .SecondLineFooter div {
+    border-bottom: 1px solid gray;
+    padding-bottom: 50px;
+  }
+}
